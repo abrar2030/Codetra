@@ -646,14 +646,7 @@ section {
 }
 
 .hero-title-bg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 120px;
-    height: 20px;
-    background: var(--accent-gradient);
-    opacity: 0.3;
-    z-index: 1;
+    display: none; /* Hidden as requested */
 }
 
 .hero-subtitle {
