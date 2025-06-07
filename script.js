@@ -805,41 +805,46 @@ function initParticles() {
         particlesJS('particles-js', {
             particles: {
                 number: {
-                    value: 50,
+                    value: 80,
                     density: {
                         enable: true,
                         value_area: 800
                     }
                 },
                 color: {
-                    value: '#3cb371'
+                    value: ['#0047AB', '#1E3A8A', '#0066CC', '#004080', '#0F52BA']  // Financial blue colors
                 },
                 shape: {
-                    type: 'circle',
+                    type: ['circle', 'triangle', 'polygon'],
                     stroke: {
                         width: 0,
                         color: '#000000'
                     },
                     polygon: {
-                        nb_sides: 5
+                        nb_sides: 6  // Hexagon shape for financial data points
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
                     }
                 },
                 opacity: {
-                    value: 0.5,
-                    random: false,
+                    value: 0.6,
+                    random: true,
                     anim: {
-                        enable: false,
+                        enable: true,
                         speed: 1,
                         opacity_min: 0.1,
                         sync: false
                     }
                 },
                 size: {
-                    value: 3,
+                    value: 4,
                     random: true,
                     anim: {
-                        enable: false,
-                        speed: 40,
+                        enable: true,
+                        speed: 30,
                         size_min: 0.1,
                         sync: false
                     }
@@ -847,20 +852,20 @@ function initParticles() {
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: '#3cb371',
+                    color: '#0047AB',  // Financial blue
                     opacity: 0.4,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 2,
+                    speed: 2.5,
                     direction: 'none',
-                    random: false,
+                    random: true,
                     straight: false,
                     out_mode: 'out',
                     bounce: false,
                     attract: {
-                        enable: false,
+                        enable: true,
                         rotateX: 600,
                         rotateY: 1200
                     }
@@ -881,7 +886,7 @@ function initParticles() {
                 },
                 modes: {
                     grab: {
-                        distance: 140,
+                        distance: 180,
                         line_linked: {
                             opacity: 1
                         }
@@ -917,11 +922,11 @@ function initTypingEffect() {
     if (!typingElement) return;
     
     const phrases = [
-        'Software Engineer',
-        'Frontend Developer',
-        'Backend Developer',
-        'Full Stack Developer',
-        'UI/UX Enthusiast'
+        'Financial Engineer',
+        'Quantitative Analyst',
+        'Risk Management Specialist',
+        'Algorithmic Trader',
+        'Financial Data Scientist'
     ];
     
     let phraseIndex = 0;

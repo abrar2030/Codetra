@@ -1,29 +1,29 @@
 :root {
-    /* Light theme colors - modernized palette */
+    /* Light theme colors - financial palette */
     --bg-primary: #ffffff;
     --bg-secondary: #f8f9fa;
     --text-primary: #1a1a1a;
     --text-secondary: #4a4a4a;
-    --accent-color: #2563eb; /* Modern blue accent color */
-    --accent-gradient: linear-gradient(135deg, #2563eb, #3b82f6);
-    --accent-secondary: #8b5cf6; /* Modern purple accent */
-    --accent-tertiary: #10b981; /* Modern green accent */
+    --accent-color: #0047AB; /* Financial blue accent color */
+    --accent-gradient: linear-gradient(135deg, #0047AB, #1E3A8A);
+    --accent-secondary: #004080; /* Secondary financial blue */
+    --accent-tertiary: #0F52BA; /* Tertiary financial blue */
     --border-color: #e5e7eb;
     --card-bg: #ffffff;
-    --card-shadow: 0 10px 15px rgba(0, 0, 0, 0.04);
-    --card-hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    --card-shadow: 0 10px 15px rgba(0, 71, 171, 0.04);
+    --card-hover-shadow: 0 15px 30px rgba(0, 71, 171, 0.08);
     --nav-bg: rgba(255, 255, 255, 0.85);
     --nav-blur: blur(12px);
-    --section-number-color: #2563eb;
-    --button-bg: #2563eb;
-    --button-gradient: linear-gradient(135deg, #2563eb, #3b82f6);
+    --section-number-color: #0047AB;
+    --button-bg: #0047AB;
+    --button-gradient: linear-gradient(135deg, #0047AB, #1E3A8A);
     --button-text: #ffffff;
-    --button-hover: #1d4ed8;
+    --button-hover: #003380;
     --tech-tag-bg: #f3f4f6;
     --tech-tag-text: #374151;
     --form-bg: #f9fafb;
     --form-border: #e5e7eb;
-    --form-focus: #2563eb;
+    --form-focus: #0047AB;
     --overlay-bg: rgba(255, 255, 255, 0.05);
     --overlay-blur: blur(8px);
     --noise-opacity: 0.02;
@@ -32,14 +32,14 @@
     --scrollbar-thumb-hover: #a1a1a1;
     --tooltip-bg: rgba(17, 24, 39, 0.8);
     --tooltip-text: #ffffff;
-    --progress-bar-bg: rgba(37, 99, 235, 0.15);
-    --progress-bar-fill: #2563eb;
+    --progress-bar-bg: rgba(0, 71, 171, 0.15);
+    --progress-bar-fill: #0047AB;
     --modal-bg: #ffffff;
     --modal-overlay: rgba(0, 0, 0, 0.5);
     --loader-bg: #ffffff;
-    --loader-color: #2563eb;
-    --cursor-color: rgba(37, 99, 235, 0.5);
-    --cursor-dot: #2563eb;
+    --loader-color: #0047AB;
+    --cursor-color: rgba(0, 71, 171, 0.5);
+    --cursor-dot: #0047AB;
 }
 
 [data-theme="dark"] {
@@ -47,26 +47,26 @@
     --bg-secondary: #1e293b;
     --text-primary: #f1f5f9;
     --text-secondary: #cbd5e1;
-    --accent-color: #3b82f6; /* Modern blue for dark mode */
-    --accent-gradient: linear-gradient(135deg, #3b82f6, #60a5fa);
-    --accent-secondary: #a78bfa; /* Modern purple for dark mode */
-    --accent-tertiary: #34d399; /* Modern green for dark mode */
+    --accent-color: #0066CC; /* Financial blue for dark mode */
+    --accent-gradient: linear-gradient(135deg, #0066CC, #0F52BA);
+    --accent-secondary: #1E3A8A; /* Secondary financial blue for dark mode */
+    --accent-tertiary: #0047AB; /* Tertiary financial blue for dark mode */
     --border-color: #334155;
     --card-bg: #1e293b;
     --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     --card-hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
     --nav-bg: rgba(15, 23, 42, 0.85);
     --nav-blur: blur(12px);
-    --section-number-color: #3b82f6;
-    --button-bg: #3b82f6;
-    --button-gradient: linear-gradient(135deg, #3b82f6, #60a5fa);
+    --section-number-color: #0066CC;
+    --button-bg: #0066CC;
+    --button-gradient: linear-gradient(135deg, #0066CC, #0F52BA);
     --button-text: #f1f5f9;
-    --button-hover: #2563eb;
+    --button-hover: #0047AB;
     --tech-tag-bg: #334155;
     --tech-tag-text: #f1f5f9;
     --form-bg: #1e293b;
     --form-border: #334155;
-    --form-focus: #3b82f6;
+    --form-focus: #0066CC;
     --overlay-bg: rgba(0, 0, 0, 0.2);
     --overlay-blur: blur(8px);
     --noise-opacity: 0.04;
@@ -75,14 +75,14 @@
     --scrollbar-thumb-hover: #64748b;
     --tooltip-bg: rgba(241, 245, 249, 0.8);
     --tooltip-text: #0f172a;
-    --progress-bar-bg: rgba(59, 130, 246, 0.2);
-    --progress-bar-fill: #3b82f6;
+    --progress-bar-bg: rgba(0, 102, 204, 0.2);
+    --progress-bar-fill: #0066CC;
     --modal-bg: #1e293b;
     --modal-overlay: rgba(0, 0, 0, 0.7);
     --loader-bg: #0f172a;
-    --loader-color: #3b82f6;
-    --cursor-color: rgba(59, 130, 246, 0.5);
-    --cursor-dot: #3b82f6;
+    --loader-color: #0066CC;
+    --cursor-color: rgba(0, 102, 204, 0.5);
+    --cursor-dot: #0066CC;
 }
 
 /* Base Styles */
@@ -788,29 +788,52 @@ section {
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
-    animation: rotate 20s infinite linear;
+    animation: rotate 25s infinite linear;
 }
 
 @keyframes rotate {
     0% { transform: rotateX(0) rotateY(0) rotateZ(0); }
-    100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    25% { transform: rotateX(90deg) rotateY(90deg) rotateZ(0); }
+    50% { transform: rotateX(180deg) rotateY(180deg) rotateZ(0); }
+    75% { transform: rotateX(270deg) rotateY(270deg) rotateZ(0); }
+    100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(0); }
 }
 
 .cube-face {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: rgba(60, 179, 113, 0.1);
-    border: 1px solid var(--accent-color);
+    background: rgba(0, 71, 171, 0.1); /* Financial blue with transparency */
+    border: 1px solid #0047AB; /* Financial blue */
     backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0, 71, 171, 0.3);
 }
 
-.front { transform: translateZ(100px); }
-.back { transform: rotateY(180deg) translateZ(100px); }
-.right { transform: rotateY(90deg) translateZ(100px); }
-.left { transform: rotateY(-90deg) translateZ(100px); }
-.top { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
+/* Add financial patterns to cube faces */
+.front { 
+    transform: translateZ(100px); 
+    background-image: linear-gradient(to top, rgba(0, 71, 171, 0.2) 0%, rgba(0, 71, 171, 0.1) 100%);
+}
+.back { 
+    transform: rotateY(180deg) translateZ(100px); 
+    background-image: repeating-linear-gradient(45deg, rgba(0, 71, 171, 0.1) 0px, rgba(0, 71, 171, 0.1) 10px, rgba(0, 71, 171, 0.2) 10px, rgba(0, 71, 171, 0.2) 20px);
+}
+.right { 
+    transform: rotateY(90deg) translateZ(100px); 
+    background-image: linear-gradient(to right, rgba(0, 71, 171, 0.05) 0%, rgba(0, 71, 171, 0.2) 100%);
+}
+.left { 
+    transform: rotateY(-90deg) translateZ(100px); 
+    background-image: linear-gradient(to left, rgba(0, 71, 171, 0.05) 0%, rgba(0, 71, 171, 0.2) 100%);
+}
+.top { 
+    transform: rotateX(90deg) translateZ(100px); 
+    background-image: radial-gradient(circle, rgba(0, 71, 171, 0.2) 0%, rgba(0, 71, 171, 0.1) 100%);
+}
+.bottom { 
+    transform: rotateX(-90deg) translateZ(100px); 
+    background-image: repeating-linear-gradient(to right, rgba(0, 71, 171, 0.1) 0px, rgba(0, 71, 171, 0.1) 5px, rgba(0, 71, 171, 0.2) 5px, rgba(0, 71, 171, 0.2) 10px);
+}
 
 /* Scroll Indicator */
 .scroll-indicator {
