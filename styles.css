@@ -2797,3 +2797,14 @@ footer::before {
     }
 }
 
+
+
+.responsibilities-list {
+    list-style-type: none;
+}
+
+.responsibilities-list li {
+    list-style-type: none;
+}
+
+
