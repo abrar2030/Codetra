@@ -1306,12 +1306,7 @@ section {
 }
 
 .timeline-track {
-    position: absolute;
-    top: 0;
-    left: 3rem;
-    width: 2px;
-    height: 100%;
-    background-color: var(--accent-color);
+    display: none;
 }
 
 .experience-container {
