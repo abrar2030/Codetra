@@ -519,8 +519,9 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2rem;
+    padding: 3rem 1.5rem;
     text-align: center;
+    max-width: 400px;
 }
 
 .mobile-nav-links {
@@ -2471,9 +2472,7 @@ footer::before {
     }
     
     .hero-3d-element {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        display: none; /* Hide the animated cube on mobile */
     }
     
     .experience-date {
@@ -2829,4 +2828,211 @@ footer::before {
     list-style-type: none;
 }
 
+
+
+/* Additional Mobile Improvements */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .skill-item {
+        padding: 0.8rem;
+    }
+    
+    .skill-name {
+        font-size: 0.9rem;
+    }
+    
+    .experience-title {
+        font-size: 1.1rem;
+    }
+    
+    .experience-company {
+        font-size: 0.9rem;
+    }
+    
+    .experience-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .project-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .testimonial-author {
+        font-size: 0.85rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-item {
+        font-size: 0.9rem;
+    }
+    
+    .mobile-menu {
+        padding: 1rem;
+    }
+    
+    .mobile-nav-item {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        padding: 2rem 1rem;
+    }
+    
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+    
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.85rem;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (max-width: 768px) {
+    .btn,
+    .filter-btn,
+    .skill-tab,
+    .nav-item,
+    .mobile-nav-item {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .skill-progress {
+        height: 8px;
+    }
+    
+    .experience-item {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-stats {
+        text-align: center;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+        min-width: 120px;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .intro-text {
+        max-width: 100%;
+    }
+    
+    .scroll-btn {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 1rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .container {
+        padding: 0 0.8rem;
+    }
+}
 
