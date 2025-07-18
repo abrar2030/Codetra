@@ -2629,7 +2629,7 @@ footer::before {
     }
     
     .hero {
-        min-height: 65vh;
+        min-height: 100vh;
     }
 }
 
